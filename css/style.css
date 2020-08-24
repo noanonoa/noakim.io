@@ -1,10 +1,79 @@
-html {
+html,
+body {
   scroll-behavior: smooth;
+  height: 100%;
 }
-
+/* nav container */
 #main-nav {
   height: 120px;
   width: 100%;
+  top: 0;
   position: fixed;
-  background-color: dodgerblue;
+  line-height: 120px;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1000;
+}
+
+#main-nav-content {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#logo {
+  height: 120px;
+  position: absolute;
+  margin-left: 80px;
+}
+
+#logo a {
+  text-decoration: none;
+  font-size: 1.75em;
+  letter-spacing: 0.214286em;
+}
+
+#nav-regular {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  margin-right: 50px;
+}
+
+#nav-regular .nav-block {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+/* cover box */
+#cover {
+  position: relative;
+  height: 100%;
+}
+
+#coverBox {
+  background-color: hotpink;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 150px;
+}
+
+#coverName,
+#coverDescription {
+  position: relative;
+  text-align: center;
+  top: 25%;
+}
+
+#coverBox h1 {
+  margin: 0;
+  font-size: 4em;
+}
+
+#coverBox h4 {
+  margin: 0;
+  font-size: 1em;
 }
