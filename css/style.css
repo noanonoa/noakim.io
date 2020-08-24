@@ -16,7 +16,7 @@ body {
 }
 
 #main-nav-content {
-  max-width: 1500px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -45,14 +45,18 @@ body {
   margin: 0 30px;
 }
 
-/* cover box */
+.nav-button:hover {
+  cursor: pointer;
+}
+
+/* cover container */
 #cover {
   position: relative;
   height: 100%;
 }
 
 #coverBox {
-  background-color: hotpink;
+  /* background-color: hotpink; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,7 +77,68 @@ body {
   font-size: 4em;
 }
 
-#coverBox h4 {
+#coverBox h2 {
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+/* about container */
+#about {
+  height: 100%;
+  position: relative;
+}
+
+#aboutContent {
+  /* background-color: darkviolet; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 400px;
+  transform: translateY(-50%);
+}
+
+#aboutContent h2 {
+  font-size: 1.6em;
+}
+
+#aboutContent p {
+  font-size: 1.25em;
+  margin-top: 90px;
+  line-height: 150%;
+}
+
+#profileImageHolder {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, .3);
+}
+
+.profileImage {
+  width: 100%;
+  height: auto;
+}
+
+/* skills container */
+#skills {
+  height: 100%;
+  position: relative;
+}
+
+/* works container */
+#works {
+  height: 100%;
+  position: relative
+}
+
+/* contact container */
+#contact {
+  height: 100%;
 }
