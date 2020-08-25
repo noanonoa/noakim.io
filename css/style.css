@@ -15,7 +15,7 @@ body {
 }
 
 #main-nav-content {
-  background-color: rgba(35, 140, 45, 1);
+  /* background-color: rgba(35, 140, 45, 1); */
   margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 #coverBox {
-  background-color: hotpink;
+  /* background-color: hotpink; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -109,7 +109,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(15, 25, 50, .9);
+  /* background-color: rgba(15, 25, 50, .9); */
 }
 
 #profileImageHolder {
@@ -125,7 +125,7 @@ body {
 }
 
 #aboutContent {
-  background-color: darkviolet;
+  /* background-color: darkviolet; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -153,7 +153,7 @@ body {
 }
 
 #skillsContainer {
-  background-color: rgba(218, 164, 49, .7);
+  /* background-color: rgba(218, 0, 0, .9); */
   position: absolute;
   width: 900px;
   height: 250px;
@@ -193,11 +193,181 @@ body {
   position: relative
 }
 
+#worksBox {
+  /* background-color: turquoise; */
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#worksContainer {
+  /* background-color: red; */
+  position: relative;
+}
+
+#worksHeader {
+  position: absolute;
+  /* background-color: dodgerblue; */
+  margin: 0;
+  left: 50%;
+  margin-top: -50px;
+}
+
+#worksShowcase {
+  background-color: #333;
+  position: absolute;
+  width: 45%;
+  height: 300px;
+}
+
+#worksList {
+  position: absolute;
+  height: 300px;
+  left: 50%;
+  width: 50%;
+}
+
+#worksList h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+#worksList p {
+  font-weight: 100;
+}
+
+/* works-miLord container */
+#works-miLord {
+  height: 100%;
+  position: relative
+}
+
+#worksContainer-miLord {
+  /* background-color: rgba(200, 160, 90); */
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#worksShowcase-miLord {
+  background-color: #333;
+  position: absolute;
+  width: 45%;
+  height: 300px;
+  right: 0;
+}
+
+#worksList-miLord {
+  position: absolute;
+  height: 300px;
+  width: 50%;
+}
+
+#worksList-miLord h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+#worksList-miLord p {
+  font-weight: 100;
+}
+
+/* works-vizMoney container */
+#works-vizMoney {
+  height: 100%;
+  position: relative
+}
+
+#worksContainer-vizMoney {
+  /* background-color: royalblue; */
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#worksShowcase-vizMoney {
+  background-color: #333;
+  position: absolute;
+  width: 45%;
+  height: 300px;
+}
+
+#worksList-vizMoney {
+  position: absolute;
+  height: 300px;
+  width: 50%;
+  left: 50%;
+}
+
+#worksList-vizMoney h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+#worksList-vizMoney p {
+  font-weight: 100;
+}
+
+/* works-terra container */
+#works-terra {
+  height: 100%;
+  position: relative
+}
+
+#worksContainer-terra {
+  /* background-color: lime; */
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#worksShowcase-terra {
+  background-color: #333;
+  position: absolute;
+  width: 45%;
+  height: 300px;
+  right: 0;
+}
+
+#worksList-terra {
+  position: absolute;
+  height: 300px;
+  width: 50%;
+}
+
+#worksList-terra h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+#worksList-terra p {
+  font-weight: 100;
+}
+
 /* contact container */
 #contact {
   height: 100%;
+  position: relative;
 }
 
-mustard {
+#contactContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.mustard {
   background-color: rgba(218, 164, 49, .7); 
 }
