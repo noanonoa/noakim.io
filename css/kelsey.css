@@ -99,9 +99,9 @@ body {
 .slantedDivCover {
   position: absolute;
   width: 100%;
-  height: 300px;
+  height: 500px;
   bottom: 0;
-  transform: translateY(50%);
+  transform: translateY(80%);
 }
 
 .slantedDivCover:after {
@@ -115,7 +115,7 @@ body {
   bottom: 0;
   left: 0;
   transform-origin: top left;
-  transform: skewY(-5deg);
+  transform: skewY(-7deg);
 }
 
 #coverBox h2 {
@@ -214,29 +214,33 @@ body {
 
 /* skills container */
 #skills {
-  height: 100%;
+  height: 50%;
   position: relative;
+  margin: -12%;
+  /* margin: 0; */
+  background-color: dodgerblue;
 }
 
 #skillsContainer {
   position: absolute;
-  width: 50px;
-  height: 250px;
-  top: 50%;
+  width: 500px;
+  height: 200px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  background-color: pink;
 }
 
 #skillsList {
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 50%;
   height: 250px;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
 #skillsList h2 {
   position: relative;
+  text-align: center;
 }
 
 #skillsList p {
@@ -247,8 +251,8 @@ body {
 
 #skillsShowcase {
   position: absolute;
-  height: 250px;
-  width: 500px;
+  height: 25px;
+  width: 50px;
   right: 0;
   border-radius: 5px;
   display: flex;
