@@ -210,7 +210,6 @@ body {
 .profileImage {
   width: 100%;
   height: auto;
-  transform: translateY(-10%);
 }
 
 /* skills container */
@@ -240,8 +239,7 @@ body {
 
 #skillsList p {
   position: relative;
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 1.1em;
 }
 
 #skillsShowcase {
@@ -304,10 +302,11 @@ body {
 
 /* works container */
 #works {
-  height: 100%;
+  height: auto;
   position: relative;
   color: #F2EEEB;
   background-color: #042440;
+  /* overflow: hidden; */
 }
 
 #worksHeader {
@@ -319,15 +318,11 @@ body {
 
 #worksBox {
   position: relative;
-  width: 90%;
+  width: 100%;
   left: 50%;
-  top: 50px;
+  top: 3em;
   transform: translateX(-50%);
-}
-
-#vizMoneyContainer {
-  position: relative;
-  height: 100%;
+  background-color: #042440;
 }
 
 .githubButton {
@@ -354,10 +349,51 @@ body {
   cursor: pointer;
 }
 
-#vizMoneyImageHolder {
-  width: 100%;
+/* viz-money article */
+#vizMoneyContainer {
+  position: relative;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 7em;
 }
 
 #vizMoneyImageHolder img {
   width: 100%;
+  height: auto;
+}
+
+#vizMoneyTitle {
+  font-size: 1.25em;
+}
+
+/* terra article */
+#terraContainer {
+  position: relative;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 7em;
+}
+
+#terraShow img {
+  width: 100%;
+  height: auto;
+}
+
+#terraDescription {
+  position: relative;
+}
+
+#terraTitle {
+  position: relative;
+}
+
+/* flappy bird article */
+#flappyBirdContainer {
+  position: relative;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 7em;
 }
