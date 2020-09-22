@@ -1,42 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html,
 body {
-  scroll-behavior: smooth;
   height: 100%;
-  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 /* nav container */
 #main-nav {
-  height: 120px;
-  width: 100%;
   position: fixed;
-  line-height: 120px;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
   text-align: right;
   background-color: #F2EEEB;
   z-index: 1000;
 }
 
 #main-nav-content {
-  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #logo {
-  height: 120px;
-  width: 120px;
   position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
 }
 
 #logo a {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: block;
-  height: 120px;
-  width: 120px;
 }
 
 #logo a img {
   display: block;
   margin: 0;
   padding: 0;
-  height: 50px;
+  height: auto;
+  width: 50px;
   top: 50%;
   left: 50%;
   position: relative;
@@ -65,6 +80,36 @@ body {
   letter-spacing: .2em;
 }
 
+#hamburgerMenu {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+#barGroup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar {
+  background-color: #042440;
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 7px auto;
+  padding: 0;
+  position: relative;
+}
+
+#hamburgerMenu:hover {
+  cursor: pointer;
+}
+
 .nav-button a {
   text-decoration: none;
   color: #042440;
@@ -78,134 +123,93 @@ body {
 #cover {
   position: relative;
   height: 100%;
-  margin-bottom: 2em;
 }
 
 #coverBox {
   position: absolute;
+  width: 200px;
+  height: 200px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 150px;
 }
 
-#coverName,
+#coverName {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 #coverDescription {
   position: relative;
   text-align: center;
-  top: 25%;
-}
-
-.slantedDivCover {
-  position: absolute;
-  width: 100%;
-  height: 500px;
   bottom: 0;
-  transform: translateY(80%);
-}
-
-.slantedDivCover:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: #F2EEEB;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform-origin: top left;
-  transform: skewY(-7deg);
 }
 
 #coverBox h2 {
   color: #042440;
-  margin-top: 15px;
   font-size: 1.2em;
-  font-weight: 100;
 }
 
 #coverName img {
-  width: 160px;
-  height: 160px;
+  width: 100%;
+  height: auto;
 }
 
 .section-header {
   font-size: 1.6em;
 }
 
-#hamburgerMenu {
-  margin: 0;
-  width: 50px;
-  height: 25px;
-  position: absolute;
-  top: 50%;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.bar {
-  background-color: #042440;
-  display: block;
-  width: 25px;
-  height: 2px;
-  margin: 5px auto;
-  padding: 0;
-  position: relative;
-}
-
-#hamburgerMenu:hover {
-  cursor: pointer;
-}
-
 /* about container */
 #about {
-  height: 100%;
+  height: 800px;
   position: relative;
   color: #042440;
+  background-color: #F2EEEB;
+}
+
+/* slanted background cover section */
+#about:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-4deg) translateY(-15%);
+  content: '';
+  background: inherit;
 }
 
 #aboutContainer {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #F2EEEB;
-  /* overflow: hidden; */
 }
 
 #profileImageHolder {
-  position: absolute;
-  top: 0;
+  position: relative;
+  width: 300px;
+  height: 300px;
   left: 50%;
   transform: translateX(-50%);
-  width: 350px;
-  height: 350px;
   overflow: hidden;
 }
 
 #aboutContent {
-  position: absolute;
-  color: #042440;
-  top: 50%;
+  position: relative;
   left: 50%;
   width: 90%;
   transform: translateX(-50%);
 }
 
 #aboutContent h2 {
+  position: relative;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 #aboutContent p {
-  /* font-size: 1.25em; */
-  /* line-height: 150%; */
-  font-weight: 400;
+  line-height: 150%;
 }
 
 .profileImage {
@@ -215,7 +219,7 @@ body {
 
 /* skills container */
 #skills {
-  height: 50%;
+  height: 250px;
   position: relative;
   color: #042440;
 }
@@ -239,8 +243,8 @@ body {
 }
 
 #skillsList p {
-  position: relative;
-  font-size: 1.1em;
+  /* position: relative; */
+  line-height: 150%;
 }
 
 #skillsShowcase {
@@ -258,6 +262,17 @@ body {
 #contactRow {
   position: relative;
   margin-top: 5em;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-row-wrapper {
+  position: relative;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #viewResumeButton {
@@ -310,11 +325,14 @@ body {
   /* overflow: hidden; */
 }
 
-#worksHeader {
-  text-align: center;
-  margin: 0;
-  padding-top: 50px;
-  font-size: 3em;
+/* slanted background after works section */
+#works:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: skewY(4deg) translateY(7%);
+  content: '';
+  background: inherit;
 }
 
 #worksBox {
@@ -324,6 +342,11 @@ body {
   top: 3em;
   transform: translateX(-50%);
   background-color: #042440;
+}
+
+#worksHeader {
+  text-align: center;
+  font-size: 3em;
 }
 
 .githubButton {
@@ -429,29 +452,6 @@ body {
   height: auto;
 }
 
-.slantedDivWorks {
-  position: absolute;
-  width: 100%;
-  height: 500px;
-  bottom: 0;
-  transform: translateY(50%);
-  z-index: -1;
-}
-
-.slantedDivWorks:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: #042440;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform-origin: top right;
-  transform: skewY(7deg);
-}
-
 /* contact container */
 #contact {
   position: relative;
@@ -460,10 +460,11 @@ body {
 
 #contactContainer {
   position: absolute;
-  width: 90%;
-  top: 50%;
+  width: 100%;
+  /* top: 50%; */
   left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 50px;
+  transform: translateX(-50%);
 }
 
 #contactTitle {
@@ -509,4 +510,11 @@ body {
   height: 100%;
   color: #042440;
   text-decoration: none;
+}
+
+@media (min-width: 376px) {
+  /* changes CSS after hitting 375px width */
+  html {
+    /* background-color: hotpink; */
+  }
 }
