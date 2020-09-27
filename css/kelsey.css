@@ -345,7 +345,6 @@ body {
   position: relative;
   color: #F2EEEB;
   background-color: #042440;
-  /* overflow: hidden; */
 }
 
 /* slanted background after works section */
@@ -465,7 +464,7 @@ body {
 #yesMiLordImageHolder {
   position: relative;
   width: 100%;
-  max-height: 450px;
+  max-height: 370px;
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
@@ -478,6 +477,20 @@ body {
 
 #yesMiLordDescription {
   padding-bottom: 50px;
+}
+
+#vizMoneyImageHolder,
+#terraImageHolder,
+#flappyBirdImageHolder,
+#yesMiLordImageHolder {
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, .5);
+}
+
+#vizMoneyDescription,
+#terraDescription,
+#flappyBirdDescription,
+#yesMiLordDescription {
+  line-height: 150%;
 }
 
 /* contact container */
@@ -591,10 +604,20 @@ body {
     display: flex;
     max-width: 800px;
     justify-content: space-around;
+    gap: 50px;
+  }
+
+  #flappyBirdDescription {
+    width: 400px;
+    line-height: 150%;
   }
 
   #flappyBirdDescription h3 {
     margin-top: 0;
+  }
+
+  #yesMiLordImageHolder {
+    max-height: 450px;
   }
 
   #yesMiLordImageHolder img {
@@ -674,6 +697,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    gap: 50px;
   }
   
   #vizMoneyImageHolder {
@@ -681,6 +705,7 @@ body {
   }
   #vizMoneyDescription {
     width: 450px;
+    line-height: 150%;
   }
   
   #vizMoneyDescription h3 {
@@ -690,6 +715,7 @@ body {
   #terraContainer {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
   }
 
   #terraImageHolder {
@@ -698,6 +724,7 @@ body {
 
   #terraDescription {
     width: 450px;
+    line-height: 150%;
   }
 
   #terraDescription h3 {
@@ -708,10 +735,11 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    gap: 50px;
   }
 
   #yesMiLordImageHolder {
-    width: 500px;
+    max-height: 370px;
   }
 
   #yesMiLordImageHolder img {
@@ -720,6 +748,7 @@ body {
 
   #yesMiLordDescription {
     width: 450px;
+    line-height: 150%;
   }
 
   #yesMiLordDescription h3 {
