@@ -604,6 +604,7 @@ body {
   #flappyBirdContainer {
     display: flex;
     max-width: 800px;
+    flex-direction: row-reverse;
     justify-content: space-around;
     gap: 50px;
   }
@@ -734,7 +735,6 @@ body {
   
   #yesMiLordContainer {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
     gap: 50px;
   }
