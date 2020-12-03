@@ -178,7 +178,7 @@ body {
   bottom: 0;
 }
 
-#coverBox h2 {
+#coverBox h1 {
   color: #042440;
   font-size: 1.2em;
 }
@@ -263,7 +263,7 @@ body {
   transform: translateX(-50%);
 }
 
-#skillsList h2 {
+#skillsList h3 {
   position: relative;
   text-align: center;
 }
