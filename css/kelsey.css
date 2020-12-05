@@ -767,6 +767,12 @@ body {
   }
 }
 
+@media (min-width: 2000px) {
+  #about:before {
+    transform: skewY(-4deg) translateY(-25%);
+  }
+}
+
 @media (max-height: 400px) {
   #coverBox {
     width: 180px;
